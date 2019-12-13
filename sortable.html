@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>FGX API</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' href='css/controlP.css'>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="scr/sortable/jquery.sortable.js"></script>
+<script src="scr/sortable/jquery.sortable.min.js"></script>
+<script src="scr/controlP.js"></script>
+<script src="scr/test.js"></script>
+	<meta charset="utf-8">
+	<title>HTML5 Sortable jQuery Plugin</title>
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header>
+		<h1>HTML5 Sortable jQuery Plugin</h1>
+	</header>
+	
+	<section>
+		<h2>Sortable List With Handles</h2>
+		<ul class="handles list">
+			<li><span>::</span> Item 1</li>
+			<li><span>::</span> Item 2</li>
+			<li><span>::</span> Item 3</li>
+			<li><span>::</span> Item 4</li>
+			<li><span>::</span> Item 5</li>
+			<li><span>::</span> Item 6</li>
+		</ul>
+	</section>
+	
+
+	<script type="application/javascript">
+		$(function() {
+			$('.sortable').sortable();
+			$('.handles').sortable({
+				handle: 'span'
+			});
+			$('.connected').sortable({
+				connectWith: '.connected'
+			});
+			$('.exclude').sortable({
+				items: ':not(.disabled)'
+			});
+		});
+	</script>
+</body>
+</html>

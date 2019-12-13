@@ -1,0 +1,33 @@
+<style type="text/css">
+<!--
+*:focus {
+    outline: none;
+}
+input.middle:focus {
+    outline-width: 0;
+}
+body {
+	background-image: url(../images/login_bg.png);
+	background-repeat: repeat-x;
+	background-color: #DCE3E4;
+}
+.WRONG
+{
+font-size: 12px;
+font-family: lucida sans unicode;
+color:#FFFFCC;
+src: url('lsansuni.ttf');
+}
+.style5 {
+	font-family: "lucida sans unicode";
+	font-weight: bold;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.style7 {
+	font-size: 26px;
+	color: #33CCFF;
+}
+
+-->
+</style>

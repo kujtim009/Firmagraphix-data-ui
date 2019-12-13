@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FGX API</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' href='css/main.css'>
+<link rel='stylesheet' href='css/packages.css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scr/login.js"></script>
+<script src="scr/main.js"></script>
+<script src="scr/authenticate.js"></script>
+<script src="scr/packages.js"></script>
+
+</head>
+<body>
+
+<img src="images/ajax-loader.gif" id="loading-indicator" style="display:none" />
+
+<div id="rightHeader" align="center" class="top_div">
+  
+  
+  
+  <div id="icon_container"  class="rightheadercsv">
+    <img src="images/select.png" id="exit" onclick="openviewcol()" width="33" height="33" style="cursor: pointer;" />
+    <a href="index.html">
+    <img src="images/home2.png" id="exit" width="33" height="33" style="cursor: pointer;" />
+    </a>
+    <a href="controlP.html">
+    <img src="images/Settings-icon.png" id="exit" width="33" height="33" style="cursor: pointer;" />
+    </a>
+    <img src="images/exit-button-icon-18.png" id="exit" onclick="logout()" width="33" height="33" style="cursor: pointer;" />
+  </div>
+
+
+
+
+  <div id="user_name" class="top_text">
+
+  </div>
+
+
+  <div id="button_coins"  class="button_coins">
+  <input type="button" class="btn btn-success btn-sm" value="Get more coins">
+  </div>
+
+  <div id="coins" class="top_text">
+  Your coins: 1000 
+  </div>
+  
+
+
+</div>
+
+
+
+<div id="mainDiv" align="center" class="mainDiv">
+
+    <div id="packages_container" class="pckg_container">
+      <div class="package package_1">
+        <span class="pck_title">BASIC PACKAGE</span>
+        <br><br><br><br>
+        <span class="pck_description">Get 1000 coins for <span class="pck_numbers">$100</span></span>
+        <br><br><br><br><br><br><br><br>
+        <input type="button" class="btn btn-success btn-sm" value="Get more coins" onclick="addCoins(1);">
+        
+      </div>
+
+      <div class="package package_2">
+          <span class="pck_title">PROFESSIONAL PACKAGE</span>
+          <br><br><br>
+          <span class="pck_description">Get 100.000 coins for <span class="pck_numbers">$1000</span></span>
+          <br><br><br><br><br><br><br><br>
+          <input type="button" class="btn btn-success btn-sm" value="Get more coins"  onclick="addCoins(2);">
+ 
+      </div>
+
+      <div class="package package_3">
+          <span class="pck_title">SWAP DATA</span>
+          <br><br><br><br>
+          <span class="pck_description">Swap your data for coins!</span>
+          <br><br><br><br><br><br><br><br>
+          <input type="button" class="btn btn-success btn-sm" value="Get more coins"  onclick="addCoins(3);">
+          <br><br><br><br><br><br><br><br>
+      </div>
+    </div>  
+
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FGX API</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' href='css/controlP.css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scr/sortable/jquery.sortable.js"></script>
+<script src="scr/sortable/jquery.sortable.min.js"></script>
+<script src="scr/controlP.js"></script>
+<script src="scr/authenticate.js"></script>
+<script src="scr/ajaxcall.js"></script>
+</head>
+<body>
+
+<img src="images/ajax-loader.gif" id="loading-indicator" style="display:none" />
+<div id="headerDiv" align="center" class="headerDiv">
+Control Panel
+
+  <div id="rightHeader" align="center" class="rightheader">
+    <a href="index.html">
+  <img src="images/home.png" id="exit" onclick="openadmin()" width="33" height="33" style="cursor: pointer;" />
+  </a>
+  <img src="images/exit-button-icon-18.png" id="exit" onclick="logout()" width="33" height="33" style="cursor: pointer;" />
+  </div>
+ <br> 
+  <br> 
+</div>
+<div id="msgdiv" align="center" class="msgdiv">
+
+</div>
+<div id="mainDiv" align="left" class="mainDiv">
+
+<select class="btn btn-success btn-sm" id="users" onChange="get_user_fields()" style="width:150px; float: left; margin-left:5px" >
+    <option value="null">All users</option>
+</select>
+
+    <input type="button" class="btn btn-success btn-sm" value="Update columns" onclick="update()" style="margin-left:5px"/>
+
+    <br>
+    <br>
+
+<div id="FieldsDiv" align="left" class="FieldsDiv_class">
+   <input type="button" class="btn btn-success btn-sm" value="Select all" onclick="checkallChecks()" style=""/>
+    <input type="button" class="btn btn-success btn-sm" value="Deselect all" onclick="removeCheckBoxes()" style=""/>
+    <br>
+    <br>
+    List of available columns
+    <ul id = 'ul_chckb_list' class='handles list'></ul>
+</div>
+
+</div>
+
+<script type="application/javascript">
+		
+</script>
+
+</body>
+</html>
